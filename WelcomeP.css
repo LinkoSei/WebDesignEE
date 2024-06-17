@@ -316,13 +316,14 @@ footer .cp {
     font-size: 36px;
     font-weight: 600px;
     min-width: 280px;
-    min-height: 50px;
+    min-height: 40px;
     line-height: 1.2;
 }
 
 
 .typing-text span {
     position: relative;
+    height: 125px;
     display: inline-block;
 }
 
@@ -331,7 +332,6 @@ footer .cp {
     color: var(--main-color);
     animation: words 20s infinite;
     white-space: nowrap;
-    /* Prevents text from wrapping */
 }
 
 .typing-text span::after {
@@ -340,7 +340,7 @@ footer .cp {
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
-    border-left: 3px solid var(--main-color);
+    border-left: 3px solid var(--bg-color);
     right: -8px;
     animation: typing 20s infinite, cursor 4s infinite;
 }
@@ -722,6 +722,9 @@ footer .cp {
     .typing-text {
         font-size: 28px;
         min-height: 40px;
+    }
+    .typing-text span{
+        height: 65px;
     }
 }
 
