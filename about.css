@@ -864,7 +864,7 @@ footer .cp {
 
 @media (max-width: 1088px) {
     .skill-box {
-        height: 360px;
+        height: 385px;
     }
 
     .portfolio p {
@@ -1090,7 +1090,7 @@ footer .cp {
     }
 
     .skill-box {
-        height: 500px;
+        height: a;
     }
 
     .skills-container {
@@ -1160,7 +1160,9 @@ footer .cp {
     .portfolio {
         height: auto;
     }
-
+    .skill-box {
+        height: 450px;
+    }
     .grid-container {
         grid-template-columns: 1fr;
         padding: 10px;
@@ -1181,9 +1183,9 @@ footer .cp {
 }
 
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
     .skill-box {
-        height: 460px;
+        height: 500px;
     }
 
     .skills h1 {
@@ -1201,14 +1203,5 @@ footer .cp {
 
     .portfolio .esf {
         font-size: 1.5rem;
-    }
-
-    .education {
-        width: 120vw;
-    }
-
-    .timeline-content {
-        width: auto;
-        height: auto;
     }
 }
