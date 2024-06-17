@@ -71,19 +71,19 @@ html::-webkit-scrollbar-thumb {
 
 .underlogo {
     position: fixed;
-    left: 35px;
-    bottom: 27px;
+    left: 15px;
+    bottom: 7px;
     width: 80px;
     height: auto;
 }
 
 .logo-container {
     position: fixed;
-    left: 20px;
-    bottom: 20px;
+    left: 2.5px;
+    bottom: 2.5px;
     width: 100px;
     height: 70px;
-    background-color: rgba(80, 79, 77, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -243,7 +243,7 @@ span {
     bottom: 0;
     width: 100%;
     background-color:gray;
-    height: 6vw;
+    height: 6.5vw;
     position: relative;
     z-index: 1;
 }
@@ -308,16 +308,21 @@ footer .cp{
     font-size: 36px;
     font-weight: 600px;
     min-width: 280px;
+    min-height: 50px; 
+    line-height: 1.2;
 }
+
 
 .typing-text span {
     position: relative;
+    display: inline-block;
 }
 
 .typing-text span::before {
     content: 'NiHao!';
     color: var(--main-color);
     animation: words 20s infinite;
+    white-space: nowrap; /* Prevents text from wrapping */
 }
 
 .typing-text span::after {
@@ -326,7 +331,7 @@ footer .cp{
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
-    border-left: 3px solid var(--bg-color);
+    border-left: 3px solid var(--main-color);
     right: -8px;
     animation: typing 20s infinite, cursor 4s infinite;
 }
@@ -405,5 +410,374 @@ footer .cp{
     85%,
     100% {
         width: calc(100% + 8px);
+    }
+}
+@media (max-width:1338px){
+    .portfolio .sf{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 1285px) {
+    html {
+        font-size: 55%;
+    }
+    .skills-container {
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 5rem;
+    }
+    .skill-info h3 {
+        font-size: 3rem;
+    }
+    .skill-box {
+        height: 320px;
+    }
+    .portfolio .sf{
+        font-size: 1.6rem;
+    }
+    .portfolio .esf{
+        font-size: 1.2rem;
+    }
+    .education{
+        width: auto;
+    }
+}
+
+@media (max-width: 1088px) {
+    .skill-box {
+        height: 360px;
+    }
+    .portfolio p{
+        font-size: 2.5rem;
+    }
+    .portfolio .esf{
+        font-size: 1.3rem;
+    }
+    .underlogo {
+    width: 60px;
+    height: auto;
+}
+    .logo-container{
+        width: 80px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .home {
+        gap: 4rem;
+    }
+    .skill-info h3 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 995px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid var(--main-color);
+        border-bottom: 3px solid var(--main-color);
+        border-bottom-left-radius: 2rem;
+        padding: 1rem 3%;
+        background-color: var(--second-bg-color);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+    .navbar.active {
+        display: block;
+    }
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .navbar a:hover,
+    .navbar a.active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid var(--main-color);
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        height: 80vw;
+    }
+    .grid-item {
+        font-size: 1.2rem;
+        height: 200px;
+    }
+    .grid-item a {
+        font-size: 2rem;
+        padding: 5px 10px;
+        width: 100%;
+        height: 100%;
+    }
+    .portfolio{
+        height: 110vw;
+    }
+    .portfolio .esf{
+        font-size: 2rem;
+    }
+}
+@media (max-width:991px) {
+    header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .timeline-bars::before {
+        left: 7px;
+    }
+
+    .timeline-bar:nth-child(odd) {
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-bar:nth-child(odd),
+    .timeline-bar:nth-child(even) {
+        padding-left: 37px;
+    }
+
+    .timeline-dot {
+        left: 0;
+    }
+
+    .skills {
+        padding-bottom: 7rem;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+
+    .skill-info h3 {
+        font-size: 2rem;
+        font-weight: 800;
+        line-height: 2;
+    }
+
+}
+@media (max-width: 895px) {
+    .home {
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+    .home .home-content h3 {
+        font-size: 2.5rem;
+    }
+    .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-img img {
+        width: 36vw;
+        margin-top: 4rem;
+    }
+    .timeline-content p {
+        font-size: 1.6rem;
+    }
+    .skill-info h3 {
+        font-size: 2rem;
+    }
+    .portfolio{
+        height: 125vw;
+    }
+    .grid-container{
+        height: 95vw;
+    }
+}
+@media (max-width: 895px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3%;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+    }
+    .navbar.active {
+        display: block;
+    }
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: white;
+    }
+    .heading {
+        font-size: 5rem;
+    }
+    .home {
+        margin: 5rem 4rem;
+    }
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+    .home-content h1 {
+        font-size: 4rem;
+        margin-top: 3rem;
+    }
+    .home-content p {
+        max-width: 800px;
+        font-size: 1.5rem;
+        margin: 0 auto;
+    }
+    .home-img {
+        width: 36vw;
+    }
+    .skills h2 {
+        margin-bottom: 3rem;
+    }
+    .skill-box {
+        height: 500px;
+    }
+    .skills-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .HLA3 {
+        font-size: 2rem;
+    }
+    .skill-info h3 {
+        font-size: 2rem;
+    }
+    .footer{
+        height: auto;
+    }
+}
+@media (max-width: 768px) {
+    .typing-text {
+        font-size: 28px;
+        min-height: 40px;
+    }
+}
+@media (max-width: 735px) {
+    .home {
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+    .home .home-content h3 {
+        font-size: 2.5rem;
+    }
+    .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-img img {
+        width: 36vw;
+        margin-top: 4rem;
+    }
+    .timeline-content p {
+        font-size: 1.6rem;
+    }
+    .skill-info h3 {
+        font-size: 2rem;
+    }
+    .portfolio{
+        height: auto;
+    }
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+        height: auto;
+    }
+    .grid-item a {
+        font-size: 2rem;
+        padding: 5px 10px;
+        width: 100%;
+        height: 100%;
+    }
+    .grid-item{
+        height: auto;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .portfolio{
+        height: auto;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        height: auto;
+    }
+    .grid-item {
+        font-size: 1rem;
+        height: auto;
+    }
+    .grid-item a {
+        font-size: 1.5rem;
+        padding: 5px 10px;
+        width: 100%;
+        height: auto;
+    }
+    span{
+        font-size: 6rem;
+        height: auto;
+    }
+    .tl{
+        font-size: 2.5rem;
+    }
+}
+
+
+@media (max-width: 385px) {
+    .social-icon a{
+        width: 50px;
+        height: 50px;
+    }
+    .social-icon .none{
+        padding-bottom: 12px;
+    }
+    .social-icon i{
+        font-size: 25px;
+    }
+    .social-icon img{
+        height: 30px;
+        width: 30px;
+        margin-top: 10px;
+    }
+    .skill-box {
+        height: 460px;
+    }
+    .skills h1 {
+        font-size: 1.6rem;
+    }
+    .skills h2 {
+        font-size: 1.8rem;
+        font-weight: bolder;
+    }
+    .skills h3 {
+        font-size: 2rem;
+    }
+    .portfolio .esf{
+        font-size: 1.5rem;
+    }
+    .education{
+        width: 120vw;
+    }
+    .timeline-content{
+        width: auto;
+        height: auto;
+    }
+    .etr{
+        font-size: 2.5rem;
+        width: 200px;
     }
 }
