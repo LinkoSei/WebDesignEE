@@ -236,18 +236,20 @@ span {
     background: rgb(139, 119, 81);
     box-shadow: 1.2px 1px 15px rgb(223, 207, 177);
 }
+
 /* Footer設定 */
 
-.footer{
+.footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    background-color:gray;
+    background-color: gray;
     height: 6.5vw;
     position: relative;
     z-index: 1;
 }
-.footer ul{
+
+.footer ul {
     margin-top: 0;
     padding: 0;
     font-size: 18px;
@@ -255,30 +257,36 @@ span {
     margin-bottom: 0;
     text-align: center;
 }
-.footer ul li a{
+
+.footer ul li a {
     color: rgb(74, 61, 189);
     border-bottom: 3px solid transparent;
     transition: 0.4s ease;
 }
-.footer ul li a:hover{
+
+.footer ul li a:hover {
     border-bottom: 3px solid rgb(69, 73, 80);
 }
+
 .footer ul li {
     display: inline-block;
     padding: 0 15px;
 }
-footer{
-    background-color:gray;
+
+footer {
+    background-color: gray;
     height: 8vw;
     position: relative;
     z-index: 1;
 }
-footer .cp{
+
+footer .cp {
     margin-top: 5px;
     text-align: center;
     font-size: 20px;
     color: black;
 }
+
 /* 進入主頁區塊 */
 .etr {
     display: block;
@@ -308,7 +316,7 @@ footer .cp{
     font-size: 36px;
     font-weight: 600px;
     min-width: 280px;
-    min-height: 50px; 
+    min-height: 50px;
     line-height: 1.2;
 }
 
@@ -322,7 +330,8 @@ footer .cp{
     content: 'NiHao!';
     color: var(--main-color);
     animation: words 20s infinite;
-    white-space: nowrap; /* Prevents text from wrapping */
+    white-space: nowrap;
+    /* Prevents text from wrapping */
 }
 
 .typing-text span::after {
@@ -412,33 +421,41 @@ footer .cp{
         width: calc(100% + 8px);
     }
 }
-@media (max-width:1338px){
-    .portfolio .sf{
+
+@media (max-width:1338px) {
+    .portfolio .sf {
         font-size: 2rem;
     }
 }
+
 @media (max-width: 1285px) {
     html {
         font-size: 55%;
     }
+
     .skills-container {
         padding-bottom: 7rem;
         grid-template-columns: repeat(2, 1fr);
         margin: 0 5rem;
     }
+
     .skill-info h3 {
         font-size: 3rem;
     }
+
     .skill-box {
         height: 320px;
     }
-    .portfolio .sf{
+
+    .portfolio .sf {
         font-size: 1.6rem;
     }
-    .portfolio .esf{
+
+    .portfolio .esf {
         font-size: 1.2rem;
     }
-    .education{
+
+    .education {
         width: auto;
     }
 }
@@ -447,17 +464,21 @@ footer .cp{
     .skill-box {
         height: 360px;
     }
-    .portfolio p{
+
+    .portfolio p {
         font-size: 2.5rem;
     }
-    .portfolio .esf{
+
+    .portfolio .esf {
         font-size: 1.3rem;
     }
+
     .underlogo {
-    width: 60px;
-    height: auto;
-}
-    .logo-container{
+        width: 60px;
+        height: auto;
+    }
+
+    .logo-container {
         width: 80px;
         height: 55px;
     }
@@ -467,6 +488,7 @@ footer .cp{
     .home {
         gap: 4rem;
     }
+
     .skill-info h3 {
         font-size: 3rem;
     }
@@ -476,6 +498,7 @@ footer .cp{
     #menu-icon {
         display: block;
     }
+
     .navbar {
         position: absolute;
         top: 100%;
@@ -489,42 +512,51 @@ footer .cp{
         border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
         display: none;
     }
+
     .navbar.active {
         display: block;
     }
+
     .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
     }
+
     .navbar a:hover,
     .navbar a.active {
         padding: 1rem;
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid var(--main-color);
     }
+
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
         padding: 20px;
         height: 80vw;
     }
+
     .grid-item {
         font-size: 1.2rem;
         height: 200px;
     }
+
     .grid-item a {
         font-size: 2rem;
         padding: 5px 10px;
         width: 100%;
         height: 100%;
     }
-    .portfolio{
+
+    .portfolio {
         height: 110vw;
     }
-    .portfolio .esf{
+
+    .portfolio .esf {
         font-size: 2rem;
     }
 }
+
 @media (max-width:991px) {
     header {
         padding: 2rem 3%;
@@ -567,38 +599,48 @@ footer .cp{
     }
 
 }
+
 @media (max-width: 895px) {
     .home {
         flex-direction: column;
         margin: 5rem 4rem;
     }
+
     .home .home-content h3 {
         font-size: 2.5rem;
     }
+
     .home-content h1 {
         font-size: 5rem;
     }
+
     .home-img img {
         width: 36vw;
         margin-top: 4rem;
     }
+
     .timeline-content p {
         font-size: 1.6rem;
     }
+
     .skill-info h3 {
         font-size: 2rem;
     }
-    .portfolio{
+
+    .portfolio {
         height: 125vw;
     }
-    .grid-container{
+
+    .grid-container {
         height: 95vw;
     }
 }
+
 @media (max-width: 895px) {
     #menu-icon {
         display: block;
     }
+
     .navbar {
         position: absolute;
         top: 100%;
@@ -612,171 +654,212 @@ footer .cp{
         border-bottom: 2px solid var(--main-color);
         display: none;
     }
+
     .navbar.active {
         display: block;
     }
+
     .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
         color: white;
     }
+
     .heading {
         font-size: 5rem;
     }
+
     .home {
         margin: 5rem 4rem;
     }
+
     .home-content h3 {
         font-size: 2.6rem;
     }
+
     .home-content h1 {
         font-size: 4rem;
         margin-top: 3rem;
     }
+
     .home-content p {
         max-width: 800px;
         font-size: 1.5rem;
         margin: 0 auto;
     }
+
     .home-img {
         width: 36vw;
     }
+
     .skills h2 {
         margin-bottom: 3rem;
     }
+
     .skill-box {
         height: 500px;
     }
+
     .skills-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .HLA3 {
         font-size: 2rem;
     }
+
     .skill-info h3 {
         font-size: 2rem;
     }
-    .footer{
+
+    .footer {
         height: auto;
     }
 }
+
 @media (max-width: 768px) {
     .typing-text {
         font-size: 28px;
         min-height: 40px;
     }
 }
+
 @media (max-width: 735px) {
     .home {
         flex-direction: column;
         margin: 5rem 4rem;
     }
+
     .home .home-content h3 {
         font-size: 2.5rem;
     }
+
     .home-content h1 {
         font-size: 5rem;
     }
+
     .home-img img {
         width: 36vw;
         margin-top: 4rem;
     }
+
     .timeline-content p {
         font-size: 1.6rem;
     }
+
     .skill-info h3 {
         font-size: 2rem;
     }
-    .portfolio{
+
+    .portfolio {
         height: auto;
     }
+
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
         padding: 20px;
         height: auto;
     }
+
     .grid-item a {
         font-size: 2rem;
         padding: 5px 10px;
         width: 100%;
         height: 100%;
     }
-    .grid-item{
+
+    .grid-item {
         height: auto;
     }
 
 }
 
 @media (max-width: 600px) {
-    .portfolio{
+    .portfolio {
         height: auto;
     }
+
     .grid-container {
         grid-template-columns: 1fr;
         padding: 10px;
         height: auto;
     }
+
     .grid-item {
         font-size: 1rem;
         height: auto;
     }
+
     .grid-item a {
         font-size: 1.5rem;
         padding: 5px 10px;
         width: 100%;
         height: auto;
     }
-    span{
+
+    span {
         font-size: 6rem;
         height: auto;
     }
-    .tl{
+
+    .tl {
         font-size: 2.5rem;
     }
 }
 
 
 @media (max-width: 385px) {
-    .social-icon a{
+    .social-icon a {
         width: 50px;
         height: 50px;
     }
-    .social-icon .none{
+
+    .social-icon .none {
         padding-bottom: 12px;
     }
-    .social-icon i{
+
+    .social-icon i {
         font-size: 25px;
     }
-    .social-icon img{
+
+    .social-icon img {
         height: 30px;
         width: 30px;
         margin-top: 10px;
     }
+
     .skill-box {
         height: 460px;
     }
+
     .skills h1 {
         font-size: 1.6rem;
     }
+
     .skills h2 {
         font-size: 1.8rem;
         font-weight: bolder;
     }
+
     .skills h3 {
         font-size: 2rem;
     }
-    .portfolio .esf{
+
+    .portfolio .esf {
         font-size: 1.5rem;
     }
-    .education{
+
+    .education {
         width: 120vw;
     }
-    .timeline-content{
+
+    .timeline-content {
         width: auto;
         height: auto;
     }
-    .etr{
+
+    .etr {
         font-size: 2.5rem;
         width: 200px;
     }
