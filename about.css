@@ -150,26 +150,31 @@ html::-webkit-scrollbar-thumb {
     }
 }
 
-.education{
+.education {
     min-height: 100vh;
     padding: 5rem 9% 5rem;
 }
-.home{
+
+.home {
     min-height: 100vh;
     padding: 5rem 9% 5rem;
 }
-.skills{
+
+.skills {
     min-height: 100vh;
     padding: 5rem 9% 5rem;
 }
-.contact{
+
+.contact {
     min-height: 100vh;
     padding: 5rem 9% 5rem;
 }
-.portfolio{
+
+.portfolio {
     min-height: 60vh;
     padding: 5rem 9% 5rem;
 }
+
 .home {
     display: flex;
     justify-content: center;
@@ -195,6 +200,7 @@ span {
 .RHL {
     color: red;
 }
+
 .PHL {
     color: rgb(160, 22, 194);
 }
@@ -297,7 +303,7 @@ span {
     color: var(--main-color);
     border: 4px solid var(--main-color);
     letter-spacing: 0.1rem;
-    font-weight:bolder;
+    font-weight: bolder;
     transition: 0.3s ease;
     cursor: pointer;
 }
@@ -510,15 +516,17 @@ span {
     line-height: 1.7;
     color: antiquewhite;
 }
-.portfolio{
+
+.portfolio {
     background: var(--second-bg-color);
 
 }
+
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 25px; 
-    padding: 60px 60px 40px 60px; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 60px 60px 40px 60px;
     background-color: var(--bg-color);
     border-radius: 15px;
     height: 600px;
@@ -566,6 +574,7 @@ span {
 .sf {
     font-size: 2.5rem;
 }
+
 .esf {
     font-size: 1.5rem;
 }
@@ -686,9 +695,10 @@ span.blinking-text {
 }
 
 /* Contact Section */
-.contact{
+.contact {
     background-color: rgba(19, 18, 18, 0.918);
 }
+
 .contact h2 {
     margin-bottom: 3rem;
     color: white;
@@ -706,7 +716,8 @@ span.blinking-text {
     justify-content: center;
     flex-wrap: wrap;
 }
-.contact form .input-box2 input{
+
+.contact form .input-box2 input {
     width: 25%;
     padding: 1.5rem;
     font-size: 1.6rem;
@@ -715,13 +726,15 @@ span.blinking-text {
     border-radius: 20rem;
     border: 2px solid var(--main-color);
 }
-.contact form .input-box2 input:hover{
+
+.contact form .input-box2 input:hover {
     transform: scale(1.03);
     background-color: var(--main-color);
     color: var(--text-color);
     box-shadow: 0 0 25px var(--main-color);
     transition: 0.65s ease;
 }
+
 .contact form .input-box input,
 .contact form textarea {
     width: 100%;
@@ -741,7 +754,7 @@ span.blinking-text {
 
 /* Footer設定 */
 
-.footer{
+.footer {
     position: relative;
     bottom: 0;
     width: 100%;
@@ -749,12 +762,13 @@ span.blinking-text {
     background-color: var(--main-color);
 }
 
-.footer .social{
+.footer .social {
     text-align: center;
     padding-bottom: 25px;
     color: black;
 }
-.footer .social a{
+
+.footer .social a {
     font-size: 25px;
     color: black;
     border: 2px soild black;
@@ -767,12 +781,14 @@ span.blinking-text {
     margin: 0 10px;
     transition: 0.4s ease;
 }
-.footer .social a:hover{
+
+.footer .social a:hover {
     transform: scale(1.1) translateY(-5px);
     background: black;
     color: var(--main-color);
 }
-.footer ul{
+
+.footer ul {
     margin-top: 0;
     padding: 0;
     font-size: 18px;
@@ -780,19 +796,23 @@ span.blinking-text {
     margin-bottom: 0;
     text-align: center;
 }
-.footer ul li a{
+
+.footer ul li a {
     color: black;
     border-bottom: 3px solid transparent;
     transition: 0.4s ease;
 }
-.footer ul li a:hover{
+
+.footer ul li a:hover {
     border-bottom: 3px solid black;
 }
+
 .footer ul li {
     display: inline-block;
     padding: 0 15px;
 }
-footer .cp{
+
+footer .cp {
     margin-top: 50px;
     text-align: center;
     font-size: 16px;
@@ -1001,6 +1021,16 @@ footer .cp{
         font-size: 2rem;
         font-weight: 800;
         line-height: 2;
+    }
+}
+
+@media (max-width:400px) {
+    section {
+        width: 110vw;
+    }
+
+    .footer {
+        width: 110vw;
     }
 }
 
