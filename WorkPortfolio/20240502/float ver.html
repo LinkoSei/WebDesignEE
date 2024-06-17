@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float 排版</title>
+    <style>
+        #container {
+            width: 900px;
+            margin: 0 auto;
+            background-color: darkkhaki;
+        }
+
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+            border: 5px solid gray;
+            text-align: center;
+            font-size: 5em;
+            font-style: italic;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .right {
+            float: right;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="inner">1</div>
+        <div class="inner left">2</div>
+        <div class="inner left">3</div>
+        <div class="inner right">4</div>
+        <div class="inner right">5</div>
+        <div class="inner clear">6</div>
+    </div>
+</body>
+
+</html>

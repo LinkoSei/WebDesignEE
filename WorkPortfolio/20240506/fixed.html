@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            margin: 0 auto;
+        }
+
+        #container {
+            width: 980px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        #header {
+            height: 200px;
+            background-color: lightblue;
+
+        }
+
+        nav {
+            height: 100px;
+            background-color: antiquewhite;
+        }
+
+        main {
+            min-height: 1000px;
+            background-color: azure;
+        }
+
+        footer {
+            height: 100px;
+            background-color: cyan;
+        }
+
+        .gotop {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: azure;
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            line-height: 50px;
+            position: fixed;
+            right: 380px;
+            bottom: 10px;
+            z-index: 1;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIXED</title>
+    <script src="https://kit.fontawesome.com/dd05c9a5d4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <header>header</header>
+        </div>
+        <nav>nav</nav>
+        <main>main</main>
+        <footer>footer</footer>
+        <a href="#header">
+            <div class="gotop">
+
+                <i class="fa-solid fa-up-long fa-bounce fa-2x"></i>
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>
